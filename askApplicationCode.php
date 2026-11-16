@@ -1,0 +1,4 @@
+<?php $pageTitle = 'Track Application | MetroSEED-Naga'; $activePage = ''; require 'includes/site-header.php'; ?>
+<section class="page-hero"><div class="container"><span class="eyebrow">APPLICATION STATUS</span><h1>Check your application.</h1><p>Enter your application code to view the latest status provided by Metro PESO.</p></div></section>
+<section class="section-space"><div class="container"><div class="row justify-content-center"><div class="col-lg-6"><div class="detail-card"><label class="form-label">Application code</label><input class="form-control mb-3" type="text" placeholder="YEP-2026-0000"><button class="btn btn-brand w-100" type="button">View status <i class="bi bi-arrow-right"></i></button><p class="small mt-4 mb-0">Do not have a code yet? <a href="registration.php" class="text-link">Register your interest</a>.</p></div></div></div></div></section>
+<?php require 'includes/site-footer.php'; ?>
