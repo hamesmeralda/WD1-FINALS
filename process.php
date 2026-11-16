@@ -1,6 +1,129 @@
-<?php $pageTitle = 'Process and Qualifications | MetroSEED-Naga'; $activePage = 'process'; require 'includes/site-header.php'; ?>
-<section class="page-hero"><div class="container"><span class="eyebrow">PROCESS</span><h1>Know what to prepare before you apply.</h1><p>Follow the steps below and review the qualifications and documentary requirements in full before visiting Metro PESO.</p></div></section>
-<section class="section-space"><div class="container"><div class="section-heading"><span class="eyebrow">HOW IT WORKS</span><h2>From application to deployment.</h2></div><div class="process-grid"><div class="process-step"><span>01</span><div><h3>Check your eligibility</h3><p>Review the beneficiary categories, priority rules, and disqualifications below.</p></div></div><div class="process-step"><span>02</span><div><h3>Prepare your documents</h3><p>Complete the application form and gather the documents required for your category.</p></div></div><div class="process-step"><span>03</span><div><h3>Submit and be evaluated</h3><p>Submit your requirements to Metro PESO during the announced application period for screening and selection.</p></div></div><div class="process-step"><span>04</span><div><h3>Attend orientation</h3><p>Selected beneficiaries receive instructions about their assignment, schedule, conduct, and reporting.</p></div></div><div class="process-step"><span>05</span><div><h3>Complete your placement</h3><p>Report as scheduled, complete the required hours, and submit accurate daily time records.</p></div></div></div></div></section>
-<section class="soft-section"><div class="container"><div class="row g-4"><div class="col-lg-6"><div class="detail-card h-100"><span class="eyebrow">WHO MAY QUALIFY</span><h2>Eligibility and priority grounds</h2><ul class="check-list"><li>Students who are current or incoming Grade 12, first-year college, or college-level students.</li><li>Out-of-school youth pursuing further education or skills training.</li><li>Dependents of displaced workers who are unemployed or affected by closure, stoppage, or calamity.</li><li>Applicants generally 18 to 30 years old at the time of application.</li><li>Children of solo parents, youth with disabilities, or children of persons with disabilities.</li><li>Youth from low-income households certified by the CSWDO.</li><li>Applicants with at least an 85% general weighted average and no failing grades, when applicable.</li><li>Only one member per family is generally accommodated, subject to the stated exception.</li></ul></div></div><div class="col-lg-6"><div class="detail-card h-100"><span class="eyebrow">DOCUMENTARY REQUIREMENTS</span><h2>Bring the right documents</h2><ol class="number-list"><li>Duly accomplished YEP Application Form 1 with a passport-sized colored picture.</li><li>Birth or baptismal certificate, government ID, or official proof of birth date.</li><li>Proof of family income: ITR/CIR or low-income certification, depending on the household.</li><li>Certified Form 138/137, report card, or school-certified grades.</li><li>Additional proof for OSY or dependents of displaced workers, when applicable.</li><li>Photocopy of the applicant’s voter ID or voter certification.</li><li>PWD ID for applicants or parents/guardians, when applicable.</li><li>Enrollment proof and class schedule for first-semester applicants.</li><li>Accomplished YEP Data Privacy Consent Form.</li></ol></div></div></div></div></section>
-<section class="section-space"><div class="container"><div class="row g-4"><div class="col-lg-6"><div class="warning-card"><h3><i class="bi bi-exclamation-triangle"></i> Grounds for disqualification</h3><ul><li>Dropping a subject while enrolled in the program.</li><li>Receiving educational financial assistance above the allowed limit, subject to the guideline exceptions.</li><li>Failure to meet the announced work schedule or documentary requirements.</li><li>Providing false information or violating program rules.</li></ul></div></div><div class="col-lg-6"><div class="callout h-100"><div><span class="eyebrow">READY TO BEGIN?</span><h2>Prepare early and watch for the official announcement.</h2><p class="mb-0">Application dates, available slots, and schedules are announced by Metro PESO and may vary by implementation phase.</p></div><a href="registration.php" class="btn btn-brand">Register</a></div></div></div></div></section>
+<?php
+$pageTitle = 'Process and Qualifications | MetroSEED-Naga';
+$activePage = 'process';
+require 'includes/site-header.php';
+?>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">PROCESS</span>
+    <h1>Know what to prepare before you apply.</h1>
+    <p>Follow the steps below and review the qualifications and documentary requirements in full before visiting Metro PESO.</p>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">HOW IT WORKS</span>
+      <h2>From application to deployment.</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <span>01</span>
+        <div>
+          <h3>Check your eligibility</h3>
+          <p>Review the beneficiary categories, priority rules, and disqualifications below.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <span>02</span>
+        <div>
+          <h3>Prepare your documents</h3>
+          <p>Complete the application form and gather the documents required for your category.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <span>03</span>
+        <div>
+          <h3>Submit and be evaluated</h3>
+          <p>Submit your requirements to Metro PESO during the announced application period for screening and selection.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <span>04</span>
+        <div>
+          <h3>Attend orientation</h3>
+          <p>Selected beneficiaries receive instructions about their assignment, schedule, conduct, and reporting.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <span>05</span>
+        <div>
+          <h3>Complete your placement</h3>
+          <p>Report as scheduled, complete the required hours, and submit accurate daily time records.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="detail-card h-100">
+          <span class="eyebrow">WHO MAY QUALIFY</span>
+          <h2>Eligibility and priority grounds</h2>
+          <ul class="check-list">
+            <li>Students who are current or incoming Grade 12, first-year college, or college-level students.</li>
+            <li>Out-of-school youth pursuing further education or skills training.</li>
+            <li>Dependents of displaced workers who are unemployed or affected by closure, stoppage, or calamity.</li>
+            <li>Applicants generally 18 to 30 years old at the time of application.</li>
+            <li>Children of solo parents, youth with disabilities, or children of persons with disabilities.</li>
+            <li>Youth from low-income households certified by the CSWDO.</li>
+            <li>Applicants with at least an 85% general weighted average and no failing grades, when applicable.</li>
+            <li>Only one member per family is generally accommodated, subject to the stated exception.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="detail-card h-100">
+          <span class="eyebrow">DOCUMENTARY REQUIREMENTS</span>
+          <h2>Bring the right documents</h2>
+          <ol class="number-list">
+            <li>Duly accomplished YEP Application Form 1 with a passport-sized colored picture.</li>
+            <li>Birth or baptismal certificate, government ID, or official proof of birth date.</li>
+            <li>Proof of family income: ITR/CIR or low-income certification, depending on the household.</li>
+            <li>Certified Form 138/137, report card, or school-certified grades.</li>
+            <li>Additional proof for OSY or dependents of displaced workers, when applicable.</li>
+            <li>Photocopy of the applicantâ€™s voter ID or voter certification.</li>
+            <li>PWD ID for applicants or parents/guardians, when applicable.</li>
+            <li>Enrollment proof and class schedule for first-semester applicants.</li>
+            <li>Accomplished YEP Data Privacy Consent Form.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="warning-card">
+          <h3><i class="bi bi-exclamation-triangle"></i> Grounds for disqualification</h3>
+          <ul>
+            <li>Dropping a subject while enrolled in the program.</li>
+            <li>Receiving educational financial assistance above the allowed limit, subject to the guideline exceptions.</li>
+            <li>Failure to meet the announced work schedule or documentary requirements.</li>
+            <li>Providing false information or violating program rules.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="callout h-100">
+          <div>
+            <span class="eyebrow">READY TO BEGIN?</span>
+            <h2>Prepare early and watch for the official announcement.</h2>
+            <p class="mb-0">Application dates, available slots, and schedules are announced by Metro PESO and may vary by implementation phase.</p>
+          </div>
+          <a href="registration.php" class="btn btn-brand">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php require 'includes/site-footer.php'; ?>

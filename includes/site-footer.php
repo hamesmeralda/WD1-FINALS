@@ -1,5 +1,48 @@
   </main>
-  <footer class="site-footer"><div class="container py-5"><div class="row g-4"><div class="col-lg-5"><div class="footer-brand d-flex align-items-center gap-2 mb-3"><img src="photos/metro-peso-seal.png" alt="Metro PESO seal" width="42" height="42"><span>Metro PESO Naga</span></div><p class="mb-0">Connecting Naga City youth to meaningful temporary employment, practical skills, and educational support through the Youth Employment Program.</p></div><div class="col-6 col-lg-2"><h6>Explore</h6><a href="about.php">About Us</a><a href="benefits.php">Benefits</a><a href="process.php">Process</a></div><div class="col-6 col-lg-2"><h6>Get Started</h6><a href="registration.php">Apply / Register</a><a href="askApplicationCode.php">Track Application</a><a href="login.php">Account</a></div><div class="col-lg-3"><h6>Metro PESO</h6><p class="mb-1">GF DOLE Building, City Hall Compound</p><p class="mb-1">J. Miranda Avenue, Naga City 4400</p><p class="mb-0">metropeso@naga.gov.ph</p></div></div><div class="footer-bottom mt-4 pt-3"><span>© 2026 MetroSEED-Naga. City Government of Naga.</span><span>Information portal for YEP applicants</span></div></div></footer>
+
+  <footer class="site-footer">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="footer-brand d-flex align-items-center gap-2 mb-3">
+            <img src="photos/metro-peso-seal.png" alt="Metro PESO seal" width="42" height="42">
+            <span>Metro PESO Naga</span>
+          </div>
+          <p class="mb-0">
+            Connecting Naga City youth to meaningful temporary employment, practical skills,
+            and educational support through the Youth Employment Program.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6>Explore</h6>
+          <a href="about.php">About Us</a>
+          <a href="benefits.php">Benefits</a>
+          <a href="process.php">Process</a>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6>Get Started</h6>
+          <a href="registration.php">Apply / Register</a>
+          <a href="askApplicationCode.php">Track Application</a>
+          <a href="login.php">Account</a>
+        </div>
+
+        <div class="col-lg-3">
+          <h6>Metro PESO</h6>
+          <p class="mb-1">GF DOLE Building, City Hall Compound</p>
+          <p class="mb-1">J. Miranda Avenue, Naga City 4400</p>
+          <p class="mb-0">metropeso@naga.gov.ph</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4 pt-3">
+        <span>Â© 2026 MetroSEED-Naga. City Government of Naga.</span>
+        <span>Information portal for YEP applicants</span>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
