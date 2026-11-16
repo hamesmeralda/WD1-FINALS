@@ -4,71 +4,67 @@ $activePage = 'deployment';
 require 'includes/site-header.php';
 
 $offices = [
-  ['General Services Office', 'GSO', 'https://www2.naga.gov.ph/office-service/general-services-office/', 'Supports city operations through facilities, records, supplies, logistics, and front-line administrative services.', 'organization Ãƒâ€šÃ‚Â· filing Ãƒâ€šÃ‚Â· customer service'],
-  ['City EngineerÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Office', 'CEO', 'https://www2.naga.gov.ph/office-service/city-engineers-office/', 'Works with public infrastructure, construction projects, inspections, plans, and technical city services.', 'technical writing Ãƒâ€šÃ‚Â· data organization Ãƒâ€šÃ‚Â· field awareness'],
-  ['City Health Office', 'CHO', 'https://www2.naga.gov.ph/office-service/city-health-office/', 'Helps deliver public-health programs, information campaigns, records support, and community health services.', 'careful documentation Ãƒâ€šÃ‚Â· empathy Ãƒâ€šÃ‚Â· confidentiality'],
-  ['Our Lady of Lourdes Infirmary', 'OLL Infirmary', 'https://www2.naga.gov.ph/office-service/our-lady-of-lourdes-infirmary/', 'A health-service setting where support work may include patient assistance, records, reception, and coordination.', 'professionalism Ãƒâ€šÃ‚Â· compassion Ãƒâ€šÃ‚Â· attention to detail'],
-  ['City AgriculturistÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Office', 'CAgO', 'https://www2.naga.gov.ph/office-service/city-agriculturists-office/', 'Promotes agriculture, food production, livelihood support, and assistance for local farmers and communities.', 'community engagement Ãƒâ€šÃ‚Â· communication Ãƒâ€šÃ‚Â· basic data handling'],
-  ['Bicol Science and Technology Centrum', 'BSTC', 'https://www2.naga.gov.ph/office-service/bicol-science-and-technology-centrum/', 'Encourages science, technology, innovation, exhibitions, learning activities, and public engagement.', 'research Ãƒâ€šÃ‚Â· presentation Ãƒâ€šÃ‚Â· digital literacy'],
-  ['Persons with Disability Affairs Office', 'PDAO', 'https://www2.naga.gov.ph/office-service/persons-with-disability-affairs-office/', 'Coordinates programs and assistance that promote accessibility, inclusion, and the rights of persons with disabilities.', 'inclusive communication Ãƒâ€šÃ‚Â· patience Ãƒâ€šÃ‚Â· records management'],
-  ['Resource Center for the Blind', 'RCB', 'https://www2.naga.gov.ph/office-service/resources-for-the-blind/', 'Provides support, resources, and accessible services for blind and visually impaired community members.', 'accessible communication Ãƒâ€šÃ‚Â· service orientation Ãƒâ€šÃ‚Â· careful listening'],
-  ['Jesse Robredo Center for Good Governance', 'JRCGG', 'https://www2.naga.gov.ph/office-service/jesse-robredo-center-for-good-governance/', 'Supports learning, civic engagement, good governance initiatives, and public information activities.', 'research Ãƒâ€šÃ‚Â· writing Ãƒâ€šÃ‚Â· event support'],
-  ['City Vice-MayorÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Office', 'OCVM', 'https://www2.naga.gov.ph/office-service/city-vice-mayors-office/', 'Assists with legislative, constituent, correspondence, and public-service coordination under the Vice MayorÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Office.', 'professional correspondence Ãƒâ€šÃ‚Â· organization Ãƒâ€šÃ‚Â· courtesy'],
-  ['Metro Naga Development Council', 'MNDC', 'https://www2.naga.gov.ph/office-service/metro-naga-development-council-2/', 'Coordinates development concerns and cooperation among cities, municipalities, agencies, and partners in Metro Naga.', 'coordination Ãƒâ€šÃ‚Â· minutes taking Ãƒâ€šÃ‚Â· research'],
-  ['Naga City Cooperatives Development Office', 'NCCDO', 'https://www2.naga.gov.ph/office-service/naga-city-cooperatives-development-office/', 'Strengthens cooperatives through education, registration support, records, and community enterprise assistance.', 'basic finance Ãƒâ€šÃ‚Â· documentation Ãƒâ€šÃ‚Â· facilitation'],
-  ['Housing and Settlements Development Office', 'HSDO / UPAO', 'https://www2.naga.gov.ph/office-service/housing-and-settlements-development-office-upao/', 'Works on housing, settlement planning, relocation, and community coordination for safe and inclusive neighborhoods.', 'mapping awareness Ãƒâ€šÃ‚Â· interviewing Ãƒâ€šÃ‚Â· data organization'],
-  ['Water Services Division', 'WSD', 'https://www2.naga.gov.ph/office-service/water-services-division/', 'Supports water-service coordination, customer concerns, records, and public information related to water access.', 'customer service Ãƒâ€šÃ‚Â· documentation Ãƒâ€šÃ‚Â· problem solving'],
-  ['City College of Naga', 'CCN', 'https://www2.naga.gov.ph/office-service/city-college-of-naga-2/', 'An education setting where beneficiaries may support student services, offices, events, and learning activities.', 'academic support Ãƒâ€šÃ‚Â· communication Ãƒâ€šÃ‚Â· office software'],
-  ['City Budget Office', 'CBO', 'https://www2.naga.gov.ph/office-service/city-budget-office/', 'Supports budget preparation, records, reports, and the responsible allocation of public funds.', 'numeracy Ãƒâ€šÃ‚Â· spreadsheets Ãƒâ€šÃ‚Â· confidentiality'],
-  ['Gender and Development Office', 'GAD', 'https://www2.naga.gov.ph/office-service/gender-and-development-office/', 'Promotes gender-responsive programs, inclusion, awareness, and equitable public services.', 'advocacy Ãƒâ€šÃ‚Â· respectful communication Ãƒâ€šÃ‚Â· event support'],
-  ['Building Maintenance and Energy Efficiency Office', 'BMEECO', 'https://www2.naga.gov.ph/office-service/building-and-maintenance-office/', 'Supports city facilities, building upkeep, energy conservation, and maintenance coordination.', 'workplace safety Ãƒâ€šÃ‚Â· inventory Ãƒâ€šÃ‚Â· practical problem solving'],
-  ['Market Enterprise and Promotions Office', 'MEPO', 'https://www2.naga.gov.ph/office-service/market-enterprise-and-promotions-office/', 'Helps manage market operations, vendor coordination, promotions, and public-facing enterprise services.', 'customer service Ãƒâ€šÃ‚Â· coordination Ãƒâ€šÃ‚Â· basic records'],
-  ['Naga City Youth Development Office', 'NCYDO', 'https://www2.naga.gov.ph/office-service/naga-city-youth-development-office-ncydo/', 'Creates youth-centered programs, events, consultations, and opportunities for civic participation.', 'event coordination Ãƒâ€šÃ‚Â· social media Ãƒâ€šÃ‚Â· teamwork'],
-  ['City TreasurerÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Office', 'CTO', 'https://www2.naga.gov.ph/office-service/city-treasurers-office/', 'Handles public financial transactions, receipts, taxpayer assistance, and accountable records.', 'numeracy Ãƒâ€šÃ‚Â· accuracy Ãƒâ€šÃ‚Â· confidentiality'],
-  ['Public Safety Office', 'PSO', 'https://www2.naga.gov.ph/office-service/public-safety-office/', 'Supports public safety coordination, information, incident documentation, and community preparedness.', 'alertness Ãƒâ€šÃ‚Â· calm communication Ãƒâ€šÃ‚Â· reporting'],
-  ['i-Governance Office', 'i-Gov', 'https://www2.naga.gov.ph/office-service/i-governance-office/', 'Uses technology and digital systems to improve public services, information access, and government processes.', 'digital literacy Ãƒâ€šÃ‚Â· troubleshooting Ãƒâ€šÃ‚Â· data privacy'],
-  ['Naga City Dangerous Drugs Board', 'NCDDB', 'https://www2.naga.gov.ph/office-service/naga-city-dangerous-drugs-board/', 'Supports prevention, education, documentation, and community programs promoting a safe and healthy city.', 'responsible communication Ãƒâ€šÃ‚Â· documentation Ãƒâ€šÃ‚Â· teamwork'],
-  ['City Parks and Recreational Facilities Management Office', 'CPRFMO', 'https://www2.naga.gov.ph/office-service/city-parks-recreational-facilities-management-office/', 'Maintains and promotes parks, recreation spaces, public activities, and community facilities.', 'event support Ãƒâ€šÃ‚Â· facilities awareness Ãƒâ€šÃ‚Â· teamwork'],
-  ['City Population and Nutrition Office', 'CPNO', 'https://www2.naga.gov.ph/office-service/city-population-and-nutrition-office/', 'Supports population, family, nutrition, and community information programs.', 'interviewing Ãƒâ€šÃ‚Â· data gathering Ãƒâ€šÃ‚Â· empathy'],
-  ['Naga City Solo Parents Office', 'NCSPO-CSWDO', 'https://www2.naga.gov.ph/office-service/naga-city-solo-parents-office-cswdo/', 'Connects solo parents to support, services, referrals, and information through community assistance.', 'active listening Ãƒâ€šÃ‚Â· records Ãƒâ€šÃ‚Â· service orientation'],
-  ['City Human Resource Management Office', 'CHRMO', 'https://www2.naga.gov.ph/office-service/city-human-resource-management-office/', 'Supports personnel records, employee services, training coordination, and workplace administration.', 'confidentiality Ãƒâ€šÃ‚Â· filing Ãƒâ€šÃ‚Â· communication'],
-  ['Naga City District Abattoir', 'Abattoir', 'https://www2.naga.gov.ph/office-service/naga-city-abattoir/', 'Supports regulated food-service operations, documentation, sanitation, and facility coordination.', 'safety awareness Ãƒâ€šÃ‚Â· compliance Ãƒâ€šÃ‚Â· careful records'],
-  ['Solid Waste Management Office and Motorpool', 'SWMO', 'https://www2.naga.gov.ph/office-service/solid-waste-management-office/', 'Coordinates waste-management services, environmental programs, vehicles, routes, and community information.', 'environmental awareness Ãƒâ€šÃ‚Â· scheduling Ãƒâ€šÃ‚Â· teamwork'],
-  ['City Legal Office', 'CLO', 'https://www2.naga.gov.ph/office-service/city-legal-office/', 'Provides legal support to the city through records, research, correspondence, and document organization.', 'reading Ãƒâ€šÃ‚Â· writing Ãƒâ€šÃ‚Â· confidentiality'],
-  ['Investment and Tourism Promotions Office', 'ITPO', 'https://www2.naga.gov.ph/office-service/investment-and-trade-promotion-office/', 'Promotes Naga as a place to visit, invest, do business, and participate in local economic activity.', 'writing Ãƒâ€šÃ‚Â· visual communication Ãƒâ€šÃ‚Â· customer service'],
-  ['Information and Technology Office', 'ITO', 'https://www2.naga.gov.ph/office-service/information-and-technology-office/', 'Supports city information systems, technology services, digital records, and user assistance.', 'computer literacy Ãƒâ€šÃ‚Â· troubleshooting Ãƒâ€šÃ‚Â· data privacy'],
-  ['City Civil Registry Office', 'CCRO', 'https://www2.naga.gov.ph/office-service/city-civil-registry-office/', 'Maintains vital records and assists residents with civil-registration services and document requests.', 'accuracy Ãƒâ€šÃ‚Â· confidentiality Ãƒâ€šÃ‚Â· customer service'],
-  ['Sangguniang Panlungsod Office', 'SPO', 'https://www2.naga.gov.ph/office-service/sangguniang-panlungsod-office/', 'Supports legislative records, committee work, sessions, resolutions, and public documents.', 'writing Ãƒâ€šÃ‚Â· filing Ãƒâ€šÃ‚Â· attention to detail'],
-  ['Association of Barangay Councils', 'ABC', 'https://www2.naga.gov.ph/office-service/association-of-barangay-councils/', 'Coordinates barangay concerns, communication, meetings, and local governance support.', 'coordination Ãƒâ€šÃ‚Â· public communication Ãƒâ€šÃ‚Â· organization'],
-  ['City Planning and Development Office', 'CPDO', 'https://www2.naga.gov.ph/office-service/city-planning-and-development-office/', 'Supports planning, development data, maps, reports, and long-term city improvement initiatives.', 'research Ãƒâ€šÃ‚Â· spreadsheets Ãƒâ€šÃ‚Â· visual organization'],
-  ['City Procurement Office', 'CPO', 'https://www2.naga.gov.ph/office-service/city-procurement-office/', 'Supports transparent purchasing, bidding records, supplier coordination, and document tracking.', 'accuracy Ãƒâ€šÃ‚Â· compliance Ãƒâ€šÃ‚Â· organization'],
-  ['Office for Senior Citizens Affairs', 'OSCA', 'https://www2.naga.gov.ph/office-service/office-for-senior-citizens-affairs/', 'Assists senior citizens with registration, information, referrals, and access to public services.', 'patience Ãƒâ€šÃ‚Â· respectful communication Ãƒâ€šÃ‚Â· records'],
-  ['Metro Naga Public Employment Service Office', 'Metro PESO', 'https://www2.naga.gov.ph/office-service/metro-naga-public-employment-service-office/', 'Connects job seekers and employers while implementing employment programs, career services, and YEP coordination.', 'interviewing Ãƒâ€šÃ‚Â· communication Ãƒâ€šÃ‚Â· case organization'],
-  ['Bicol Central Station', 'BCS', 'https://www2.naga.gov.ph/office-service/bicol-central-station/', 'A public-facing transport setting where support work can involve information, coordination, and service assistance.', 'customer service Ãƒâ€šÃ‚Â· alertness Ãƒâ€šÃ‚Â· teamwork'],
-  ['Naga City Migrant Resource Center', 'NCMRC', 'https://www2.naga.gov.ph/office-service/naga-city-migrant-resource-center-ncmrc/', 'Provides information, referrals, and assistance to migrants and their families.', 'active listening Ãƒâ€šÃ‚Â· documentation Ãƒâ€šÃ‚Â· empathy'],
-  ['Lingkod Barangay Office', 'LBO', 'https://www2.naga.gov.ph/office-service/lingkod-barangay-office/', 'Supports barangay-level services and community coordination close to residents.', 'community engagement Ãƒâ€šÃ‚Â· organization Ãƒâ€šÃ‚Â· communication'],
-  ['Department of Culture, Heritage, and the Arts', 'DepCHArt', 'https://www2.naga.gov.ph/office-service/city-events-protocol-public-information-office/', 'Supports cultural programs, heritage activities, public events, and creative city communications.', 'creative work Ãƒâ€šÃ‚Â· event support Ãƒâ€šÃ‚Â· writing'],
-  ['City MayorÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Office', 'CMO', 'https://www2.naga.gov.ph/office-service/city-mayors-office/', 'Supports executive-office coordination, correspondence, public assistance, and city-level programs.', 'professionalism Ãƒâ€šÃ‚Â· organization Ãƒâ€šÃ‚Â· confidentiality'],
-  ['City Disaster Risk Reduction Management Office', 'CDRRMO', 'https://www2.naga.gov.ph/office-service/city-disaster-risk-reduction-management-office/', 'Supports preparedness, response information, risk-reduction education, and community resilience work.', 'calm communication Ãƒâ€šÃ‚Â· reporting Ãƒâ€šÃ‚Â· teamwork'],
-  ['City Environment and Natural Resources Office', 'CENRO', 'https://www2.naga.gov.ph/office-service/city-environment-and-natural-resources-office/', 'Works on environmental protection, conservation, information campaigns, and community programs.', 'environmental awareness Ãƒâ€šÃ‚Â· research Ãƒâ€šÃ‚Â· field coordination'],
-  ['City Veterinary Office', 'CVO', 'https://www2.naga.gov.ph/office-service/city-veterinary-office/', 'Supports animal health, welfare, vaccination, public information, and community veterinary services.', 'care Ãƒâ€šÃ‚Â· documentation Ãƒâ€šÃ‚Â· public communication'],
-  ['Naga City General Hospital', 'NCGH', 'https://www2.naga.gov.ph/office-service/naga-city-hospital/', 'A hospital setting where support assignments may include records, reception, patient guidance, and service coordination.', 'confidentiality Ãƒâ€šÃ‚Â· empathy Ãƒâ€šÃ‚Â· accuracy'],
-  ['City AccountantÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Office', 'CAcO', 'https://www2.naga.gov.ph/office-service/city-accountants-office/', 'Supports accounting records, reports, documentation, and public financial accountability.', 'numeracy Ãƒâ€šÃ‚Â· spreadsheets Ãƒâ€šÃ‚Â· precision'],
-  ['Education, Scholarship and Sports Office', 'ESSO', 'https://www2.naga.gov.ph/office-service/education-scholarship-and-sports-office-naga-city-school-board/', 'Coordinates education assistance, scholarship records, sports programs, and student-centered services.', 'records management Ãƒâ€šÃ‚Â· communication Ãƒâ€šÃ‚Â· event support'],
-  ['Internal Audit Service', 'IAS', 'https://www2.naga.gov.ph/office-service/internal-audit-service/', 'Supports review, compliance, documentation, and systems that help public offices remain accountable.', 'critical thinking Ãƒâ€šÃ‚Â· confidentiality Ãƒâ€šÃ‚Â· detail'],
-  ['City Social Welfare Development Office', 'CSWDO', 'https://www2.naga.gov.ph/office-service/city-social-welfare-development-office/', 'Provides social protection, referrals, community assistance, and support for vulnerable residents.', 'empathy Ãƒâ€šÃ‚Â· interviewing Ãƒâ€šÃ‚Â· case documentation'],
-  ['City AssessorÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s Office', 'CAsO', 'https://www2.naga.gov.ph/office-service/city-assessors-office/', 'Maintains property assessment records and assists with public requests related to real property information.', 'accuracy Ãƒâ€šÃ‚Â· data entry Ãƒâ€šÃ‚Â· customer service'],
-  ['Raul S. Roco Library', 'RSRL', 'https://www2.naga.gov.ph/office-service/raul-s-roco-library/', 'Supports readers, learning resources, library organization, research assistance, and community learning activities.', 'organization Ãƒâ€šÃ‚Â· research Ãƒâ€šÃ‚Â· service orientation'],
-  ['City Educare Service', 'Educare', 'https://www2.naga.gov.ph/office-service/city-educare-service/', 'Supports child-focused care, learning activities, family assistance, and community-based social services.', 'patience Ãƒâ€šÃ‚Â· creativity Ãƒâ€šÃ‚Â· safeguarding awareness']
+  ['General Services Office', 'GSO', 'https://www2.naga.gov.ph/office-service/general-services-office/', 'Supports city operations through facilities, records, supplies, logistics, and front-line administrative services.', 'organization · filing · customer service'],
+  ['City Engineer’s Office', 'CEO', 'https://www2.naga.gov.ph/office-service/city-engineers-office/', 'Works with public infrastructure, construction projects, inspections, plans, and technical city services.', 'technical writing · data organization · field awareness'],
+  ['City Health Office', 'CHO', 'https://www2.naga.gov.ph/office-service/city-health-office/', 'Helps deliver public-health programs, information campaigns, records support, and community health services.', 'careful documentation · empathy · confidentiality'],
+  ['Our Lady of Lourdes Infirmary', 'OLL Infirmary', 'https://www2.naga.gov.ph/office-service/our-lady-of-lourdes-infirmary/', 'A health-service setting where support work may include patient assistance, records, reception, and coordination.', 'professionalism · compassion · attention to detail'],
+  ['City Agriculturist’s Office', 'CAgO', 'https://www2.naga.gov.ph/office-service/city-agriculturists-office/', 'Promotes agriculture, food production, livelihood support, and assistance for local farmers and communities.', 'community engagement · communication · basic data handling'],
+  ['Bicol Science and Technology Centrum', 'BSTC', 'https://www2.naga.gov.ph/office-service/bicol-science-and-technology-centrum/', 'Encourages science, technology, innovation, exhibitions, learning activities, and public engagement.', 'research · presentation · digital literacy'],
+  ['Persons with Disability Affairs Office', 'PDAO', 'https://www2.naga.gov.ph/office-service/persons-with-disability-affairs-office/', 'Coordinates programs and assistance that promote accessibility, inclusion, and the rights of persons with disabilities.', 'inclusive communication · patience · records management'],
+  ['Resource Center for the Blind', 'RCB', 'https://www2.naga.gov.ph/office-service/resources-for-the-blind/', 'Provides support, resources, and accessible services for blind and visually impaired community members.', 'accessible communication · service orientation · careful listening'],
+  ['Jesse Robredo Center for Good Governance', 'JRCGG', 'https://www2.naga.gov.ph/office-service/jesse-robredo-center-for-good-governance/', 'Supports learning, civic engagement, good governance initiatives, and public information activities.', 'research · writing · event support'],
+  ['City Vice-Mayor’s Office', 'OCVM', 'https://www2.naga.gov.ph/office-service/city-vice-mayors-office/', 'Assists with legislative, constituent, correspondence, and public-service coordination under the Vice Mayor’s Office.', 'professional correspondence · organization · courtesy'],
+  ['Metro Naga Development Council', 'MNDC', 'https://www2.naga.gov.ph/office-service/metro-naga-development-council-2/', 'Coordinates development concerns and cooperation among cities, municipalities, agencies, and partners in Metro Naga.', 'coordination · minutes taking · research'],
+  ['Naga City Cooperatives Development Office', 'NCCDO', 'https://www2.naga.gov.ph/office-service/naga-city-cooperatives-development-office/', 'Strengthens cooperatives through education, registration support, records, and community enterprise assistance.', 'basic finance · documentation · facilitation'],
+  ['Housing and Settlements Development Office', 'HSDO / UPAO', 'https://www2.naga.gov.ph/office-service/housing-and-settlements-development-office-upao/', 'Works on housing, settlement planning, relocation, and community coordination for safe and inclusive neighborhoods.', 'mapping awareness · interviewing · data organization'],
+  ['Water Services Division', 'WSD', 'https://www2.naga.gov.ph/office-service/water-services-division/', 'Supports water-service coordination, customer concerns, records, and public information related to water access.', 'customer service · documentation · problem solving'],
+  ['City College of Naga', 'CCN', 'https://www2.naga.gov.ph/office-service/city-college-of-naga-2/', 'An education setting where beneficiaries may support student services, offices, events, and learning activities.', 'academic support · communication · office software'],
+  ['City Budget Office', 'CBO', 'https://www2.naga.gov.ph/office-service/city-budget-office/', 'Supports budget preparation, records, reports, and the responsible allocation of public funds.', 'numeracy · spreadsheets · confidentiality'],
+  ['Gender and Development Office', 'GAD', 'https://www2.naga.gov.ph/office-service/gender-and-development-office/', 'Promotes gender-responsive programs, inclusion, awareness, and equitable public services.', 'advocacy · respectful communication · event support'],
+  ['Building Maintenance and Energy Efficiency Office', 'BMEECO', 'https://www2.naga.gov.ph/office-service/building-and-maintenance-office/', 'Supports city facilities, building upkeep, energy conservation, and maintenance coordination.', 'workplace safety · inventory · practical problem solving'],
+  ['Market Enterprise and Promotions Office', 'MEPO', 'https://www2.naga.gov.ph/office-service/market-enterprise-and-promotions-office/', 'Helps manage market operations, vendor coordination, promotions, and public-facing enterprise services.', 'customer service · coordination · basic records'],
+  ['Naga City Youth Development Office', 'NCYDO', 'https://www2.naga.gov.ph/office-service/naga-city-youth-development-office-ncydo/', 'Creates youth-centered programs, events, consultations, and opportunities for civic participation.', 'event coordination · social media · teamwork'],
+  ['City Treasurer’s Office', 'CTO', 'https://www2.naga.gov.ph/office-service/city-treasurers-office/', 'Handles public financial transactions, receipts, taxpayer assistance, and accountable records.', 'numeracy · accuracy · confidentiality'],
+  ['Public Safety Office', 'PSO', 'https://www2.naga.gov.ph/office-service/public-safety-office/', 'Supports public safety coordination, information, incident documentation, and community preparedness.', 'alertness · calm communication · reporting'],
+  ['i-Governance Office', 'i-Gov', 'https://www2.naga.gov.ph/office-service/i-governance-office/', 'Uses technology and digital systems to improve public services, information access, and government processes.', 'digital literacy · troubleshooting · data privacy'],
+  ['Naga City Dangerous Drugs Board', 'NCDDB', 'https://www2.naga.gov.ph/office-service/naga-city-dangerous-drugs-board/', 'Supports prevention, education, documentation, and community programs promoting a safe and healthy city.', 'responsible communication · documentation · teamwork'],
+  ['City Parks and Recreational Facilities Management Office', 'CPRFMO', 'https://www2.naga.gov.ph/office-service/city-parks-recreational-facilities-management-office/', 'Maintains and promotes parks, recreation spaces, public activities, and community facilities.', 'event support · facilities awareness · teamwork'],
+  ['City Population and Nutrition Office', 'CPNO', 'https://www2.naga.gov.ph/office-service/city-population-and-nutrition-office/', 'Supports population, family, nutrition, and community information programs.', 'interviewing · data gathering · empathy'],
+  ['Naga City Solo Parents Office', 'NCSPO-CSWDO', 'https://www2.naga.gov.ph/office-service/naga-city-solo-parents-office-cswdo/', 'Connects solo parents to support, services, referrals, and information through community assistance.', 'active listening · records · service orientation'],
+  ['City Human Resource Management Office', 'CHRMO', 'https://www2.naga.gov.ph/office-service/city-human-resource-management-office/', 'Supports personnel records, employee services, training coordination, and workplace administration.', 'confidentiality · filing · communication'],
+  ['Naga City District Abattoir', 'Abattoir', 'https://www2.naga.gov.ph/office-service/naga-city-abattoir/', 'Supports regulated food-service operations, documentation, sanitation, and facility coordination.', 'safety awareness · compliance · careful records'],
+  ['Solid Waste Management Office and Motorpool', 'SWMO', 'https://www2.naga.gov.ph/office-service/solid-waste-management-office/', 'Coordinates waste-management services, environmental programs, vehicles, routes, and community information.', 'environmental awareness · scheduling · teamwork'],
+  ['City Legal Office', 'CLO', 'https://www2.naga.gov.ph/office-service/city-legal-office/', 'Provides legal support to the city through records, research, correspondence, and document organization.', 'reading · writing · confidentiality'],
+  ['Investment and Tourism Promotions Office', 'ITPO', 'https://www2.naga.gov.ph/office-service/investment-and-trade-promotion-office/', 'Promotes Naga as a place to visit, invest, do business, and participate in local economic activity.', 'writing · visual communication · customer service'],
+  ['Information and Technology Office', 'ITO', 'https://www2.naga.gov.ph/office-service/information-and-technology-office/', 'Supports city information systems, technology services, digital records, and user assistance.', 'computer literacy · troubleshooting · data privacy'],
+  ['City Civil Registry Office', 'CCRO', 'https://www2.naga.gov.ph/office-service/city-civil-registry-office/', 'Maintains vital records and assists residents with civil-registration services and document requests.', 'accuracy · confidentiality · customer service'],
+  ['Sangguniang Panlungsod Office', 'SPO', 'https://www2.naga.gov.ph/office-service/sangguniang-panlungsod-office/', 'Supports legislative records, committee work, sessions, resolutions, and public documents.', 'writing · filing · attention to detail'],
+  ['Association of Barangay Councils', 'ABC', 'https://www2.naga.gov.ph/office-service/association-of-barangay-councils/', 'Coordinates barangay concerns, communication, meetings, and local governance support.', 'coordination · public communication · organization'],
+  ['City Planning and Development Office', 'CPDO', 'https://www2.naga.gov.ph/office-service/city-planning-and-development-office/', 'Supports planning, development data, maps, reports, and long-term city improvement initiatives.', 'research · spreadsheets · visual organization'],
+  ['City Procurement Office', 'CPO', 'https://www2.naga.gov.ph/office-service/city-procurement-office/', 'Supports transparent purchasing, bidding records, supplier coordination, and document tracking.', 'accuracy · compliance · organization'],
+  ['Office for Senior Citizens Affairs', 'OSCA', 'https://www2.naga.gov.ph/office-service/office-for-senior-citizens-affairs/', 'Assists senior citizens with registration, information, referrals, and access to public services.', 'patience · respectful communication · records'],
+  ['Metro Naga Public Employment Service Office', 'Metro PESO', 'https://www2.naga.gov.ph/office-service/metro-naga-public-employment-service-office/', 'Connects job seekers and employers while implementing employment programs, career services, and YEP coordination.', 'interviewing · communication · case organization'],
+  ['Bicol Central Station', 'BCS', 'https://www2.naga.gov.ph/office-service/bicol-central-station/', 'A public-facing transport setting where support work can involve information, coordination, and service assistance.', 'customer service · alertness · teamwork'],
+  ['Naga City Migrant Resource Center', 'NCMRC', 'https://www2.naga.gov.ph/office-service/naga-city-migrant-resource-center-ncmrc/', 'Provides information, referrals, and assistance to migrants and their families.', 'active listening · documentation · empathy'],
+  ['Lingkod Barangay Office', 'LBO', 'https://www2.naga.gov.ph/office-service/lingkod-barangay-office/', 'Supports barangay-level services and community coordination close to residents.', 'community engagement · organization · communication'],
+  ['Department of Culture, Heritage, and the Arts', 'DepCHArt', 'https://www2.naga.gov.ph/office-service/city-events-protocol-public-information-office/', 'Supports cultural programs, heritage activities, public events, and creative city communications.', 'creative work · event support · writing'],
+  ['City Mayor’s Office', 'CMO', 'https://www2.naga.gov.ph/office-service/city-mayors-office/', 'Supports executive-office coordination, correspondence, public assistance, and city-level programs.', 'professionalism · organization · confidentiality'],
+  ['City Disaster Risk Reduction Management Office', 'CDRRMO', 'https://www2.naga.gov.ph/office-service/city-disaster-risk-reduction-management-office/', 'Supports preparedness, response information, risk-reduction education, and community resilience work.', 'calm communication · reporting · teamwork'],
+  ['City Environment and Natural Resources Office', 'CENRO', 'https://www2.naga.gov.ph/office-service/city-environment-and-natural-resources-office/', 'Works on environmental protection, conservation, information campaigns, and community programs.', 'environmental awareness · research · field coordination'],
+  ['City Veterinary Office', 'CVO', 'https://www2.naga.gov.ph/office-service/city-veterinary-office/', 'Supports animal health, welfare, vaccination, public information, and community veterinary services.', 'care · documentation · public communication'],
+  ['Naga City General Hospital', 'NCGH', 'https://www2.naga.gov.ph/office-service/naga-city-hospital/', 'A hospital setting where support assignments may include records, reception, patient guidance, and service coordination.', 'confidentiality · empathy · accuracy'],
+  ['City Accountant’s Office', 'CAcO', 'https://www2.naga.gov.ph/office-service/city-accountants-office/', 'Supports accounting records, reports, documentation, and public financial accountability.', 'numeracy · spreadsheets · precision'],
+  ['Education, Scholarship and Sports Office', 'ESSO', 'https://www2.naga.gov.ph/office-service/education-scholarship-and-sports-office-naga-city-school-board/', 'Coordinates education assistance, scholarship records, sports programs, and student-centered services.', 'records management · communication · event support'],
+  ['Internal Audit Service', 'IAS', 'https://www2.naga.gov.ph/office-service/internal-audit-service/', 'Supports review, compliance, documentation, and systems that help public offices remain accountable.', 'critical thinking · confidentiality · detail'],
+  ['City Social Welfare Development Office', 'CSWDO', 'https://www2.naga.gov.ph/office-service/city-social-welfare-development-office/', 'Provides social protection, referrals, community assistance, and support for vulnerable residents.', 'empathy · interviewing · case documentation'],
+  ['City Assessor’s Office', 'CAsO', 'https://www2.naga.gov.ph/office-service/city-assessors-office/', 'Maintains property assessment records and assists with public requests related to real property information.', 'accuracy · data entry · customer service'],
+  ['Raul S. Roco Library', 'RSRL', 'https://www2.naga.gov.ph/office-service/raul-s-roco-library/', 'Supports readers, learning resources, library organization, research assistance, and community learning activities.', 'organization · research · service orientation'],
+  ['City Educare Service', 'Educare', 'https://www2.naga.gov.ph/office-service/city-educare-service/', 'Supports child-focused care, learning activities, family assistance, and community-based social services.', 'patience · creativity · safeguarding awareness']
 ];
 
 function cleanOfficeText(string $text): string
 {
-  return strtr($text, [
-    'Ãƒâ€šÃ‚Â·' => 'Â·',
-    'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢' => 'â€™',
-    'Ãƒâ€šÃ‚Â©' => 'Â©',
-  ]);
+  return $text;
 }
 ?>
 <section class="page-hero">
@@ -221,7 +217,7 @@ function cleanOfficeText(string $text): string
 </span>
 <h3>Customer-facing work</h3>
 <p>Practice courtesy, clear communication, product or service knowledge, and responsible handling of customer concerns.</p>
-<span class="tile-tag">Communication Ãƒâ€šÃ‚Â· patience Ãƒâ€šÃ‚Â· service</span>
+<span class="tile-tag">Communication · patience · service</span>
 </div>
 </div>
 <div class="col-md-4">
@@ -232,7 +228,7 @@ function cleanOfficeText(string $text): string
 </span>
 <h3>Operations and administration</h3>
 <p>Build experience in scheduling, inventory, records, data entry, coordination, and daily task management.</p>
-<span class="tile-tag">Organization Ãƒâ€šÃ‚Â· accuracy Ãƒâ€šÃ‚Â· teamwork</span>
+<span class="tile-tag">Organization · accuracy · teamwork</span>
 </div>
 </div>
 <div class="col-md-4">
@@ -243,7 +239,7 @@ function cleanOfficeText(string $text): string
 </span>
 <h3>Growing local businesses</h3>
 <p>Support marketing, digital tools, basic finance, hospitality, food service, creative work, or other partner-defined assignments.</p>
-<span class="tile-tag">Adaptability Ãƒâ€šÃ‚Â· initiative Ãƒâ€šÃ‚Â· learning</span>
+<span class="tile-tag">Adaptability · initiative · learning</span>
 </div>
 </div>
 </div>
@@ -329,16 +325,6 @@ function cleanOfficeText(string $text): string
 </section>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-  const textNodes = [];
-  while (textWalker.nextNode()) textNodes.push(textWalker.currentNode);
-  textNodes.forEach(node => {
-    node.nodeValue = node.nodeValue
-      .replaceAll('Ãƒâ€šÃ‚Â·', 'Â·')
-      .replaceAll('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢', 'â€™')
-      .replaceAll('Ã‚Â©', 'Â©');
-  });
-
   const grid = document.querySelector('.office-card-grid');
   if (!grid) return;
 
@@ -365,4 +351,6 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <?php require 'includes/site-footer.php'; ?>
+
+
 

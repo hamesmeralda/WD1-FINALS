@@ -6,9 +6,9 @@ require 'includes/site-header.php';
 
 <section class="page-hero">
   <div class="container">
-    <span class="eyebrow">ACCOUNT</span>
-    <h1>Welcome back.</h1>
-    <p>Sign in to check your application information and access your beneficiary account.</p>
+    <span class="eyebrow">WORKSPACE ACCESS</span>
+    <h1>Choose your workspace.</h1>
+    <p>Use a sample role below to preview the staff or admin workspace.</p>
   </div>
 </section>
 
@@ -26,17 +26,24 @@ require 'includes/site-header.php';
 
             <div class="d-flex justify-content-between align-items-center mb-4">
               <a href="#" class="text-link">Forgot password?</a>
-              <span class="small text-muted">Beneficiary account</span>
+              <span class="small text-muted">Staff and admin access only</span>
             </div>
 
             <button class="btn btn-brand w-100" type="button">
               Sign in <i class="bi bi-arrow-right"></i>
             </button>
+
+            <div class="mt-3">
+              <p class="small text-muted mb-2">Sample role</p>
+              <div class="d-flex gap-2">
+                <a class="btn btn-soft flex-fill" href="staff.php">Staff</a>
+                <a class="btn btn-soft flex-fill" href="admin.php">Admin</a>
+              </div>
+            </div>
           </form>
 
-          <p class="text-center mt-4 mb-0 small">
-            New applicant?
-            <a class="text-link" href="registration.php">Register here</a>
+          <p class="text-center mt-4 mb-0 small text-muted">
+            Applicant and beneficiary access will be available in a future update.
           </p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle = 'Process and Qualifications | MetroSEED-Naga';
 $activePage = 'process';
 require 'includes/site-header.php';
@@ -87,7 +87,7 @@ require 'includes/site-header.php';
             <li>Proof of family income: ITR/CIR or low-income certification, depending on the household.</li>
             <li>Certified Form 138/137, report card, or school-certified grades.</li>
             <li>Additional proof for OSY or dependents of displaced workers, when applicable.</li>
-            <li>Photocopy of the applicantâ€™s voter ID or voter certification.</li>
+            <li>Photocopy of the applicant&#39;s voter ID or voter certification.</li>
             <li>PWD ID for applicants or parents/guardians, when applicable.</li>
             <li>Enrollment proof and class schedule for first-semester applicants.</li>
             <li>Accomplished YEP Data Privacy Consent Form.</li>
@@ -127,3 +127,6 @@ require 'includes/site-header.php';
 </section>
 
 <?php require 'includes/site-footer.php'; ?>
+
+
+

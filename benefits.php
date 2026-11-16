@@ -8,6 +8,11 @@
 </section>
 <section class="section-space">
 <div class="container">
+<div class="section-heading">
+<span class="eyebrow">PRIMARY BENEFITS</span>
+<h2>Support for your next step.</h2>
+<p>Explore the main ways the Youth Employment Program can support your education, experience, and career direction.</p>
+</div>
 <div class="row g-4">
 <div class="col-md-6 col-lg-4">
 <div class="benefit-card">
