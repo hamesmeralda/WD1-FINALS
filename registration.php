@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Register | MetroSEED-Naga'; $activePage = ''; require 'includes/site-header.php'; ?>
+<?php $pageTitle = 'Register | MetroSEED-Naga'; $activePage = 'registration'; require 'includes/site-header.php'; ?>
 
 <section class="page-hero"><div class="container"><span class="eyebrow">GET STARTED</span><h1>Register your interest in YEP.</h1><p>Complete the application details below. Metro PESO staff will validate your information and update your application status.</p></div></section>
 

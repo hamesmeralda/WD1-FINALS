@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Account | MetroSEED-Naga';
-$activePage = '';
+$activePage = 'account';
 require 'includes/site-header.php';
 ?>
 
