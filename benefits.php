@@ -105,7 +105,6 @@
 
     <div class="callout mb-4">
       <div>
-        <span class="eyebrow">POSSIBLE DAILY AMOUNT</span>
         <h3>Based on the current DOLE-prescribed SPES wage rate</h3>
         <p class="mb-0">The guidelines do not set one fixed peso amount per day. The exact daily rate is confirmed by Metro PESO based on the applicable DOLE rate, program component, and completed workdays.</p>
       </div>

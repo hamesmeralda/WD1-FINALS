@@ -8,6 +8,7 @@ require 'includes/site-header.php';
   <div class="container">
     <div class="row align-items-center justify-content-center">
       <div class="col-12 text-center home-hero-content">
+        <img class="home-hero-seal" src="photos/metro-peso-seal.png" alt="Metro PESO Naga logo">
         <span class="eyebrow">CITY GOVERNMENT OF NAGA · METRO PESO</span>
         <h1>
           <span class="title-blue">Youth Employment</span>
@@ -28,6 +29,27 @@ require 'includes/site-header.php';
         </div>
       </div>
 
+      <div class="col-lg-5">
+        <div class="hero-panel">
+          <div class="hero-panel-top">
+            <img src="photos/metro-peso-seal.png" alt="Metro PESO seal">
+            <span>
+              METRO PESO<br>
+              <small>NAGA CITY</small>
+            </span>
+          </div>
+          <p class="panel-kicker">WHAT THIS PROGRAM DOES</p>
+          <h2>Earn. Learn. Prepare for what’s next.</h2>
+          <p>
+            Temporary employment for students, out-of-school youth, and dependents of displaced workers.
+          </p>
+          <div class="panel-rule"></div>
+          <div class="d-flex justify-content-between small">
+            <span>Application cycle</span>
+            <strong>2026</strong>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

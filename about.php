@@ -56,7 +56,6 @@ require 'includes/site-header.php';
   <div class="container">
     <div class="callout">
       <div>
-        <span class="eyebrow">GOOD TO KNOW</span>
         <h2>Selection is designed to reach those who need the opportunity most.</h2>
         <p class="mb-0">Priority may be given to youth ages 18–30, children of solo parents, youth with disabilities or children of persons with disabilities, low-income households, and applicants with strong academic standing.</p>
       </div>

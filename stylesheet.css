@@ -904,10 +904,7 @@ a {
   font-size:clamp(3.6rem,8vw,7rem);
   line-height:.98;
   letter-spacing:-.055em;
-  margin-bottom:1.25rem;
-  width:100%;
-  max-width:none;
-  text-align:center
+  margin-bottom:1.25rem
 }
 .home-hero h1 span {
   display:inline-block
@@ -917,8 +914,28 @@ a {
   flex-direction:column;
   align-items:center
 }
+.home-hero-seal {
+  width:56px;
+  height:56px;
+  object-fit:contain;
+  margin-bottom:.65rem
+}
+.home-hero h1 {
+  width:100%;
+  max-width:none;
+  margin-top:1.4rem;
+  margin-bottom:2rem;
+  text-align:center
+}
 .home-hero h1 .title-blue {
   white-space:nowrap
+}
+.home-hero > .container > .row > .col-lg-5 {
+  display:none
+}
+.home-hero .hero-panel,
+.home-hero .col-lg-5 {
+  display:none!important
 }
 .hero-lead {
   max-width:560px;
@@ -1001,8 +1018,7 @@ a {
   color:#bd3140
 }
 .home-hero h1 .title-blue {
-  color:#2f64ad;
-  white-space:nowrap
+  color:#2f64ad
 }
 .home-hero h1 .title-red {
   color:#bd3140
@@ -1864,5 +1880,90 @@ body:not(.page-home) .page-hero .eyebrow {
 }
 .leadership-intro .eyebrow {
   color:#bd3140!important
+}
+
+/* About page hierarchy: dark topic headers with smaller bold descriptions */
+.page-about .section-space .col-lg-7 > .eyebrow,
+.page-about .section-heading .eyebrow {
+  display:inline-flex;
+  align-items:center;
+  margin:0 0 1rem;
+  padding:.65rem 1rem;
+  border:0;
+  border-left:5px solid #f2c767;
+  background:#2f64ad;
+  color:#fff;
+  font-size:1rem;
+  font-weight:900;
+  letter-spacing:.14em;
+  line-height:1.2
+}
+.page-about .section-space .col-lg-7 > h2,
+.page-about .section-heading h2 {
+  margin-bottom:.8rem;
+  font-size:clamp(1.8rem,3.2vw,2.7rem);
+  font-weight:800;
+  line-height:1.2;
+  letter-spacing:-.035em
+}
+.page-about .section-heading .eyebrow {
+  color:#fff!important
+}
+@media(max-width:575px) {
+  .page-about .section-space .col-lg-7 > .eyebrow,
+  .page-about .section-heading .eyebrow {
+    padding:.55rem .75rem;
+    font-size:.78rem;
+    letter-spacing:.1em
+  }
+  .page-about .section-space .col-lg-7 > h2,
+  .page-about .section-heading h2 {
+    font-size:2rem
+  }
+}
+
+/* Consistent section-title hierarchy across the website */
+.section-heading .eyebrow,
+.callout > div > .eyebrow,
+.section-space .row > [class*="col-"] > .eyebrow,
+.soft-section .row > [class*="col-"] > .eyebrow {
+  display:inline-flex;
+  align-items:center;
+  margin-bottom:1rem;
+  padding:.65rem 1rem;
+  border:0;
+  border-left:5px solid #f2c767;
+  background:#2f64ad;
+  color:#fff!important;
+  font-size:1rem;
+  font-weight:900;
+  letter-spacing:.14em;
+  line-height:1.2
+}
+.section-heading h2,
+.callout h2,
+.section-space .row > [class*="col-"] > h2,
+.soft-section .row > [class*="col-"] > h2 {
+  margin-bottom:.8rem;
+  font-size:clamp(1.8rem,3.2vw,2.7rem);
+  font-weight:800;
+  line-height:1.2;
+  letter-spacing:-.035em
+}
+@media(max-width:575px) {
+  .section-heading .eyebrow,
+  .callout > div > .eyebrow,
+  .section-space .row > [class*="col-"] > .eyebrow,
+  .soft-section .row > [class*="col-"] > .eyebrow {
+    padding:.55rem .75rem;
+    font-size:.78rem;
+    letter-spacing:.1em
+  }
+  .section-heading h2,
+  .callout h2,
+  .section-space .row > [class*="col-"] > h2,
+  .soft-section .row > [class*="col-"] > h2 {
+    font-size:2rem
+  }
 }
 

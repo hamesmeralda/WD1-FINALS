@@ -14,7 +14,7 @@ $workspacePage = $workspacePage ?? false;
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="stylesheet.css?v=2">
+  <link rel="stylesheet" href="stylesheet.css?v=18">
   <link rel="icon" type="image/png" href="photos/favicon/fav-icon.png">
 </head>
 <body class="page-<?= htmlspecialchars($activePage) ?>">
