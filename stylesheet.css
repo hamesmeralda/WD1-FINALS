@@ -904,10 +904,21 @@ a {
   font-size:clamp(3.6rem,8vw,7rem);
   line-height:.98;
   letter-spacing:-.055em;
-  margin-bottom:1.25rem
+  margin-bottom:1.25rem;
+  width:100%;
+  max-width:none;
+  text-align:center
 }
 .home-hero h1 span {
   display:inline-block
+}
+.home-hero-content {
+  display:flex;
+  flex-direction:column;
+  align-items:center
+}
+.home-hero h1 .title-blue {
+  white-space:nowrap
 }
 .hero-lead {
   max-width:560px;
@@ -990,7 +1001,8 @@ a {
   color:#bd3140
 }
 .home-hero h1 .title-blue {
-  color:#2f64ad
+  color:#2f64ad;
+  white-space:nowrap
 }
 .home-hero h1 .title-red {
   color:#bd3140

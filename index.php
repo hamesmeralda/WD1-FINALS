@@ -6,49 +6,28 @@ require 'includes/site-header.php';
 
 <section class="home-hero">
   <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-7">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 text-center home-hero-content">
         <span class="eyebrow">CITY GOVERNMENT OF NAGA · METRO PESO</span>
         <h1>
-          <span class="title-blue">Youth Employment</span><br>
+          <span class="title-blue">Youth Employment</span>
           <span class="title-red">Program</span>
         </h1>
         <p class="hero-lead">
           A clear pathway to temporary work, practical skills, and education support for deserving youth in Naga City.
         </p>
-        <div class="d-flex flex-wrap gap-3 mt-4">
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
           <a href="registration.php" class="btn btn-brand">
             Apply or register <i class="bi bi-arrow-right"></i>
           </a>
           <a href="about.php" class="btn btn-soft">Learn about YEP</a>
         </div>
-        <div class="hero-note mt-4">
+        <div class="hero-note mt-4 justify-content-center">
           <i class="bi bi-shield-check"></i>
           <span>SPES · SEFE · Private Sector Partnership</span>
         </div>
       </div>
 
-      <div class="col-lg-5">
-        <div class="hero-panel">
-          <div class="hero-panel-top">
-            <img src="photos/metro-peso-seal.png" alt="Metro PESO seal">
-            <span>
-              METRO PESO<br>
-              <small>NAGA CITY</small>
-            </span>
-          </div>
-          <p class="panel-kicker">WHAT THIS PROGRAM DOES</p>
-          <h2>Earn. Learn. Prepare for what’s next.</h2>
-          <p>
-            Temporary employment for students, out-of-school youth, and dependents of displaced workers.
-          </p>
-          <div class="panel-rule"></div>
-          <div class="d-flex justify-content-between small">
-            <span>Application cycle</span>
-            <strong>2026</strong>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
