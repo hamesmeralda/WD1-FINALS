@@ -1,7 +1,8 @@
-<?php
+﻿<?php
 $pageTitle = 'Account | MetroSEED-Naga';
 $activePage = 'account';
-require 'includes/site-header.php';
+$siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php';
 ?>
 
 <section class="page-hero">
@@ -36,8 +37,8 @@ require 'includes/site-header.php';
             <div class="mt-3">
               <p class="small text-muted mb-2">Sample role</p>
               <div class="d-flex gap-2">
-                <a class="btn btn-soft flex-fill" href="staff.php">Staff</a>
-                <a class="btn btn-soft flex-fill" href="admin.php">Admin</a>
+                <a class="btn btn-soft flex-fill" href="<?= $siteRoot ?>workspace/staff/dashboard.php">Staff</a>
+                <a class="btn btn-soft flex-fill" href="<?= $siteRoot ?>workspace/admin/dashboard.php">Admin</a>
               </div>
             </div>
           </form>
@@ -51,4 +52,7 @@ require 'includes/site-header.php';
   </div>
 </section>
 
-<?php require 'includes/site-footer.php'; ?>
+<?php require '../../includes/site-footer.php'; ?>
+
+
+

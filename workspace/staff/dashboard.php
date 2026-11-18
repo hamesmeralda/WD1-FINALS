@@ -1,8 +1,9 @@
-<?php
+﻿<?php
 $pageTitle = 'Staff Workspace | MetroSEED-Naga';
 $activePage = 'staff-workspace';
 $workspacePage = true;
-require 'includes/site-header.php';
+$siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php';
 ?>
 
 <section class="workspace-hero">
@@ -39,4 +40,7 @@ require 'includes/site-header.php';
     </div>
   </div>
 </section>
+
+
+
 

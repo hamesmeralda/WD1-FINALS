@@ -1,7 +1,8 @@
 ﻿<?php
 $pageTitle = 'Process and Qualifications | MetroSEED-Naga';
 $activePage = 'process';
-require 'includes/site-header.php';
+$siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php';
 ?>
 
 <section class="page-hero">
@@ -119,14 +120,17 @@ require 'includes/site-header.php';
             <h2>Prepare early and watch for the official announcement.</h2>
             <p class="mb-0">Application dates, available slots, and schedules are announced by Metro PESO and may vary by implementation phase.</p>
           </div>
-          <a href="registration.php" class="btn btn-brand">Register</a>
+          <a href="<?= $siteRoot ?>pages/account/registration.php" class="btn btn-brand">Register</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<?php require 'includes/site-footer.php'; ?>
+<?php require '../../includes/site-footer.php'; ?>
+
+
+
 
 
 

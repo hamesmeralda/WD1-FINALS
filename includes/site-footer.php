@@ -5,7 +5,7 @@
       <div class="row g-4">
         <div class="col-lg-5">
           <div class="footer-brand d-flex align-items-center gap-2 mb-3">
-            <img src="photos/metro-peso-seal.png" alt="Metro PESO seal" width="42" height="42">
+            <img src="<?= $siteRoot ?>assets/images/metro-peso-seal.png" alt="Metro PESO seal" width="42" height="42">
             <span>Metro PESO Naga</span>
           </div>
           <p class="mb-0">
@@ -16,16 +16,16 @@
 
         <div class="col-6 col-lg-2">
           <h6>Explore</h6>
-          <a href="about.php">About Us</a>
-          <a href="benefits.php">Benefits</a>
-          <a href="process.php">Process</a>
+          <a href="<?= $siteRoot ?>pages/public/about.php">About Us</a>
+          <a href="<?= $siteRoot ?>pages/public/benefits.php">Benefits</a>
+          <a href="<?= $siteRoot ?>pages/public/process.php">Process</a>
         </div>
 
         <div class="col-6 col-lg-2">
           <h6>Get Started</h6>
-          <a href="registration.php">Apply / Register</a>
-          <a href="askApplicationCode.php">Track Application</a>
-          <a href="login.php">Account</a>
+          <a href="<?= $siteRoot ?>pages/account/registration.php">Apply / Register</a>
+          <a href="<?= $siteRoot ?>pages/account/askApplicationCode.php">Track Application</a>
+          <a href="<?= $siteRoot ?>pages/account/login.php">Account</a>
         </div>
 
         <div class="col-lg-3">

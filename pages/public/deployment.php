@@ -1,7 +1,8 @@
 ﻿<?php
 $pageTitle = 'Deployment | MetroSEED-Naga';
 $activePage = 'deployment';
-require 'includes/site-header.php';
+$siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php';
 
 $offices = [
   ['General Services Office', 'GSO', 'https://www2.naga.gov.ph/office-service/general-services-office/', 'Supports city operations through facilities, records, supplies, logistics, and front-line administrative services.', 'organization · filing · customer service'],
@@ -249,7 +250,7 @@ function cleanOfficeText(string $text): string
 <h2>Offer young people a structured first work experience.</h2>
 <p class="mb-0">Registered partners are expected to provide safe working conditions, honor the agreed wage-sharing arrangement, maintain records, and protect beneficiary information.</p>
 </div>
-<a href="process.php" class="btn btn-brand">Review the guidelines</a>
+<a href="<?= $siteRoot ?>pages/public/process.php" class="btn btn-brand">Review the guidelines</a>
 </div>
 </div>
 </section>
@@ -283,7 +284,7 @@ function cleanOfficeText(string $text): string
 <span class="eyebrow">IMPORTANT</span>
 <h3>Attendance is part of the program.</h3>
 <p>Absences, late reporting, dropping subjects, or failure to follow the approved work schedule may affect continued participation or result in removal.</p>
-<a href="process.php" class="text-link">Review the full process <i class="bi bi-arrow-right">
+<a href="<?= $siteRoot ?>pages/public/process.php" class="text-link">Review the full process <i class="bi bi-arrow-right">
 </i>
 </a>
 </div>
@@ -350,7 +351,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<?php require 'includes/site-footer.php'; ?>
+<?php require '../../includes/site-footer.php'; ?>
+
+
+
+
 
 
 

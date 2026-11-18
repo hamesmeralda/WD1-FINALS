@@ -1,4 +1,5 @@
-<?php $pageTitle = 'Register | MetroSEED-Naga'; $activePage = 'registration'; require 'includes/site-header.php'; ?>
+﻿<?php $pageTitle = 'Register | MetroSEED-Naga'; $activePage = 'registration'; $siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php'; ?>
 
 <section class="page-hero"><div class="container"><span class="eyebrow">GET STARTED</span><h1>Register your interest in YEP.</h1><p>Complete the application details below. Metro PESO staff will validate your information and update your application status.</p></div></section>
 
@@ -36,7 +37,7 @@
           <h3>Father</h3><div class="row g-3"><div class="col-md-4"><label class="form-label" for="father_name">Name *</label><input class="form-control" id="father_name" name="father_name" required></div><div class="col-md-4"><label class="form-label" for="father_occupation">Occupation *</label><input class="form-control" id="father_occupation" name="father_occupation" required></div><div class="col-md-4"><label class="form-label" for="father_contact">Contact Number</label><input class="form-control" id="father_contact" name="father_contact"></div></div>
           <h3>Mother</h3><div class="row g-3"><div class="col-md-4"><label class="form-label" for="mother_name">Name *</label><input class="form-control" id="mother_name" name="mother_name" required></div><div class="col-md-4"><label class="form-label" for="mother_occupation">Occupation *</label><input class="form-control" id="mother_occupation" name="mother_occupation" required></div><div class="col-md-4"><label class="form-label" for="mother_contact">Contact Number</label><input class="form-control" id="mother_contact" name="mother_contact"></div></div>
           <h3>Guardian <small>(if applicable)</small></h3><div class="row g-3"><div class="col-md-4"><label class="form-label" for="guardian_name">Name</label><input class="form-control" id="guardian_name" name="guardian_name"></div><div class="col-md-4"><label class="form-label" for="guardian_occupation">Occupation</label><input class="form-control" id="guardian_occupation" name="guardian_occupation"></div><div class="col-md-4"><label class="form-label" for="guardian_contact">Contact Number</label><input class="form-control" id="guardian_contact" name="guardian_contact"></div></div>
-          <h3>Household Details</h3><div class="row g-3"><div class="col-md-4"><label class="form-label d-block">OFW in Family? *</label><label class="me-3"><input type="radio" name="ofw_in_family" value="Yes"> Yes</label><label><input type="radio" name="ofw_in_family" value="No" checked> No</label></div><div class="col-md-8" id="ofwCountryWrap" hidden><label class="form-label" for="ofw_country">OFW Country</label><select class="form-select" id="ofw_country" name="ofw_country"><option value="">Select country</option></select></div><div class="col-md-6"><label class="form-label" for="family_income">Family Income *</label><select class="form-select" id="family_income" name="family_income" required><option value="">Select income range</option><option>Below ₱100,000</option><option>₱100,000 – ₱149,999</option><option>₱150,000 and above</option></select></div><div class="col-md-6"><label class="form-label" for="household_id">Parent's TIN / Household ID *</label><input class="form-control" id="household_id" name="household_id" required></div></div>
+          <h3>Household Details</h3><div class="row g-3"><div class="col-md-4"><label class="form-label d-block">OFW in Family? *</label><label class="me-3"><input type="radio" name="ofw_in_family" value="Yes"> Yes</label><label><input type="radio" name="ofw_in_family" value="No" checked> No</label></div><div class="col-md-8" id="ofwCountryWrap" hidden><label class="form-label" for="ofw_country">OFW Country</label><select class="form-select" id="ofw_country" name="ofw_country"><option value="">Select country</option></select></div><div class="col-md-6"><label class="form-label" for="family_income">Family Income *</label><select class="form-select" id="family_income" name="family_income" required><option value="">Select income range</option><option>Below â‚±100,000</option><option>â‚±100,000 â€“ â‚±149,999</option><option>â‚±150,000 and above</option></select></div><div class="col-md-6"><label class="form-label" for="household_id">Parent's TIN / Household ID *</label><input class="form-control" id="household_id" name="household_id" required></div></div>
         </section>
 
         <section class="registration-form-section" data-step="3">
@@ -102,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateFloatingState();
   });
 
-  const barangays = ['Abella','Bagumbayan Norte','Bagumbayan Sur','Balatas','Calauag','Cararayan','Carolina','Concepcion Grande','Concepcion Pequeña','Dayangdang','Del Rosario','Dinaga','Igualdad Interior','Lerma','Liboton','Mabolo','Pacol','Panicuason','Peñafrancia','Sabang','San Felipe','San Francisco (Poblacion)','San Isidro','Santa Cruz','Tabuco','Tinago','Triangulo'];
+  const barangays = ['Abella','Bagumbayan Norte','Bagumbayan Sur','Balatas','Calauag','Cararayan','Carolina','Concepcion Grande','Concepcion PequeÃ±a','Dayangdang','Del Rosario','Dinaga','Igualdad Interior','Lerma','Liboton','Mabolo','Pacol','Panicuason','PeÃ±afrancia','Sabang','San Felipe','San Francisco (Poblacion)','San Isidro','Santa Cruz','Tabuco','Tinago','Triangulo'];
   const countries = ['Saudi Arabia','United Arab Emirates','Singapore','Japan','United States','Canada'];
   const skills = ['Computer / MS Office','Data Encoding','Customer Service','Cashiering','Clerical / Filing','Graphic Design','Web / Programming','Social Media Management','Writing / Editing','Driving','Carpentry','Plumbing','Electrical','Welding','Cooking / Food Prep','Sewing / Tailoring','Teaching / Tutoring','Sales / Marketing'];
   const yearLevels = {'Junior High School':['Grade 7','Grade 8','Grade 9','Grade 10'],'Senior High School':['Grade 11','Grade 12'],'College':['1st Year','2nd Year','3rd Year','4th Year','5th Year']};
@@ -133,9 +134,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[character]));
 
   function buildReview() {
-    const value = id => document.getElementById(id).value || '—';
-    const fullName = [value('first_name'),value('middle_name'),value('last_name'),value('ext_name')].filter(item => item !== '—').join(' ');
-    const skillsValue = [...document.querySelectorAll('.skill-check:checked')].map(item => item.value).concat(document.getElementById('skills_other').value.trim() || []).join(', ') || '—';
+    const value = id => document.getElementById(id).value || 'â€”';
+    const fullName = [value('first_name'),value('middle_name'),value('last_name'),value('ext_name')].filter(item => item !== 'â€”').join(' ');
+    const skillsValue = [...document.querySelectorAll('.skill-check:checked')].map(item => item.value).concat(document.getElementById('skills_other').value.trim() || []).join(', ') || 'â€”';
     document.getElementById('reviewContent').innerHTML = `<dl class="row"><dt class="col-sm-4">Full Name</dt><dd class="col-sm-8">${escapeHtml(fullName)}</dd><dt class="col-sm-4">Date of Birth</dt><dd class="col-sm-8">${escapeHtml(value('date_of_birth'))}</dd><dt class="col-sm-4">Contact</dt><dd class="col-sm-8">${escapeHtml(value('contact_number'))} / ${escapeHtml(value('email'))}</dd><dt class="col-sm-4">Address</dt><dd class="col-sm-8">${escapeHtml(value('street_address'))}, Brgy. ${escapeHtml(value('barangay'))}</dd><dt class="col-sm-4">School</dt><dd class="col-sm-8">${escapeHtml(value('school_name'))} (${escapeHtml(value('school_level'))} - ${escapeHtml(value('year_level'))})</dd><dt class="col-sm-4">Skills</dt><dd class="col-sm-8">${escapeHtml(skillsValue)}</dd></dl>`;
   }
 
@@ -176,4 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<?php require 'includes/site-footer.php'; ?>
+<?php require '../../includes/site-footer.php'; ?>
+
+
+

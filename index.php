@@ -8,7 +8,7 @@ require 'includes/site-header.php';
   <div class="container">
     <div class="row align-items-center justify-content-center">
       <div class="col-12 text-center home-hero-content">
-        <img class="home-hero-seal" src="photos/metro-peso-seal.png" alt="Metro PESO Naga logo">
+        <img class="home-hero-seal" src="assets/images/metro-peso-seal.png" alt="Metro PESO Naga logo">
         <span class="eyebrow">CITY GOVERNMENT OF NAGA · METRO PESO</span>
         <h1>
           <span class="title-blue">Youth Employment</span>
@@ -18,10 +18,10 @@ require 'includes/site-header.php';
           A clear pathway to temporary work, practical skills, and education support for deserving youth in Naga City.
         </p>
         <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-          <a href="registration.php" class="btn btn-brand">
+          <a href="pages/account/registration.php" class="btn btn-brand">
             Apply or register <i class="bi bi-arrow-right"></i>
           </a>
-          <a href="about.php" class="btn btn-soft">Learn about YEP</a>
+          <a href="pages/public/about.php" class="btn btn-soft">Learn about YEP</a>
         </div>
         <div class="hero-note mt-4 justify-content-center">
           <i class="bi bi-shield-check"></i>
@@ -32,7 +32,7 @@ require 'includes/site-header.php';
       <div class="col-lg-5">
         <div class="hero-panel">
           <div class="hero-panel-top">
-            <img src="photos/metro-peso-seal.png" alt="Metro PESO seal">
+            <img src="assets/images/metro-peso-seal.png" alt="Metro PESO seal">
             <span>
               METRO PESO<br>
               <small>NAGA CITY</small>
@@ -65,7 +65,7 @@ require 'includes/site-header.php';
         <p>
           MetroSEED-Naga brings the important parts of the implementing guidelines into one clear place. Explore the program, check the benefits, prepare your documents, and understand what deployment looks like before you apply.
         </p>
-        <a href="process.php" class="text-link">
+        <a href="pages/public/process.php" class="text-link">
           See the complete process <i class="bi bi-arrow-up-right"></i>
         </a>
       </div>
@@ -82,7 +82,7 @@ require 'includes/site-header.php';
 
     <div class="row g-4 mt-2">
       <div class="col-md-4">
-        <a class="info-card" href="about.php">
+        <a class="info-card" href="pages/public/about.php">
           <span class="card-icon"><i class="bi bi-building"></i></span>
           <h3>About the program</h3>
           <p>
@@ -93,7 +93,7 @@ require 'includes/site-header.php';
       </div>
 
       <div class="col-md-4">
-        <a class="info-card" href="benefits.php">
+        <a class="info-card" href="pages/public/benefits.php">
           <span class="card-icon"><i class="bi bi-stars"></i></span>
           <h3>Benefits of joining</h3>
           <p>
@@ -104,7 +104,7 @@ require 'includes/site-header.php';
       </div>
 
       <div class="col-md-4">
-        <a class="info-card" href="deployment.php">
+        <a class="info-card" href="pages/public/deployment.php">
           <span class="card-icon"><i class="bi bi-briefcase"></i></span>
           <h3>Work and deployment</h3>
           <p>

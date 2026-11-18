@@ -1,7 +1,8 @@
-<?php
+﻿<?php
 $pageTitle = 'Track Application | MetroSEED-Naga';
 $activePage = '';
-require 'includes/site-header.php';
+$siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php';
 ?>
 
 <section class="page-hero">
@@ -24,7 +25,7 @@ require 'includes/site-header.php';
           </button>
           <p class="small mt-4 mb-0">
             Do not have a code yet?
-            <a href="registration.php" class="text-link">Register your interest</a>.
+            <a href="<?= $siteRoot ?>pages/account/registration.php" class="text-link">Register your interest</a>.
           </p>
         </div>
       </div>
@@ -32,4 +33,8 @@ require 'includes/site-header.php';
   </div>
 </section>
 
-<?php require 'includes/site-footer.php'; ?>
+<?php require '../../includes/site-footer.php'; ?>
+
+
+
+

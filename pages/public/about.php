@@ -1,7 +1,8 @@
-<?php
+﻿<?php
 $pageTitle = 'About Us | MetroSEED-Naga';
 $activePage = 'about';
-require 'includes/site-header.php';
+$siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php';
 ?>
 
 <section class="page-hero">
@@ -18,12 +19,12 @@ require 'includes/site-header.php';
       <div class="col-lg-5">
         <div class="about-program-card">
           <div class="about-program-card-header">
-            <img src="photos/metro-peso-seal.png" alt="Metro PESO seal">
+            <img src="<?= $siteRoot ?>assets/images/metro-peso-seal.png" alt="Metro PESO seal">
             <span>METRO PESO<br><small>CITY OF NAGA</small></span>
           </div>
           <div class="about-program-card-info">
             <h3>Metropolitan Naga Public Employment Office</h3>
-            <p>The primary gateway for Nagueños to access meaningful employment opportunities, career guidance, and workforce development initiatives.</p>
+            <p>The primary gateway for NagueÃ±os to access meaningful employment opportunities, career guidance, and workforce development initiatives.</p>
           </div>
         </div>
       </div>
@@ -57,9 +58,9 @@ require 'includes/site-header.php';
     <div class="callout">
       <div>
         <h2>Selection is designed to reach those who need the opportunity most.</h2>
-        <p class="mb-0">Priority may be given to youth ages 18–30, children of solo parents, youth with disabilities or children of persons with disabilities, low-income households, and applicants with strong academic standing.</p>
+        <p class="mb-0">Priority may be given to youth ages 18â€“30, children of solo parents, youth with disabilities or children of persons with disabilities, low-income households, and applicants with strong academic standing.</p>
       </div>
-      <a class="btn btn-brand" href="process.php">View qualifications</a>
+      <a class="btn btn-brand" href="<?= $siteRoot ?>pages/public/process.php">View qualifications</a>
     </div>
   </div>
 </section>
@@ -76,7 +77,7 @@ require 'includes/site-header.php';
       <div class="col-lg-5 col-xl-4">
         <div class="leadership-card leadership-manager h-100">
           <div class="photo-placeholder leadership-photo">
-            <img src="photos/officers/roderickreforsado.jpg" alt="Roderick Reforsado, Metro PESO Head Manager">
+            <img src="<?= $siteRoot ?>assets/images/officers/roderickreforsado.jpg" alt="Roderick Reforsado, Metro PESO Head Manager">
           </div>
           <div class="leadership-copy">
             <span class="leadership-label">OFFICE OF THE METRO PESO</span>
@@ -106,4 +107,7 @@ require 'includes/site-header.php';
   </div>
 </section>
 
-<?php require 'includes/site-footer.php'; ?>
+<?php require '../../includes/site-footer.php'; ?>
+
+
+

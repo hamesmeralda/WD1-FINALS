@@ -711,7 +711,7 @@ body {
 /* Visual refinements */
 .home-hero {
   position:relative;
-  background-image:linear-gradient(90deg,rgba(247,248,251,.97) 0%,rgba(247,248,251,.88) 48%,rgba(234,240,250,.52) 100%),url('photos/yep-homepage-bg.png');
+  background-image:linear-gradient(90deg,rgba(247,248,251,.97) 0%,rgba(247,248,251,.88) 48%,rgba(234,240,250,.52) 100%),url('../images/yep-homepage-bg.png');
   background-size:cover;
   background-position:center;
   min-height:620px;
@@ -986,11 +986,11 @@ body {
 }
 /* Make the YEP background more visible */
 .home-hero {
-  background-image:linear-gradient(90deg,rgba(247,248,251,.78) 0%,rgba(247,248,251,.6) 42%,rgba(234,240,250,.3) 100%),url('photos/yep-homepage-bg.png')
+  background-image:linear-gradient(90deg,rgba(247,248,251,.78) 0%,rgba(247,248,251,.6) 42%,rgba(234,240,250,.3) 100%),url('../images/yep-homepage-bg.png')
 }
 /* Let the supplied YEP artwork lead the hero */
 .home-hero {
-  background-image:linear-gradient(90deg,rgba(247,248,251,.12) 0%,rgba(247,248,251,.08) 44%,rgba(234,240,250,.03) 100%),url('photos/yep-homepage-bg.png')
+  background-image:linear-gradient(90deg,rgba(247,248,251,.12) 0%,rgba(247,248,251,.08) 44%,rgba(234,240,250,.03) 100%),url('../images/yep-homepage-bg.png')
 }
 /* Stronger page-title hierarchy */
 .home-hero h1 {
@@ -1118,39 +1118,39 @@ body {
 }
 /* Faded activity-photo collage for internal page openings */
 .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.76),rgba(16,44,88,.76)),url('photos/ACTIVITIES/ACT1.jpg'),url('photos/ACTIVITIES/ACT2.png'),url('photos/ACTIVITIES/ACT3.png');
+  background-image:linear-gradient(rgba(16,44,88,.76),rgba(16,44,88,.76)),url('../images/ACTIVITIES/ACT1.jpg'),url('../images/ACTIVITIES/ACT2.png'),url('../images/ACTIVITIES/ACT3.png');
   background-position:center,left center,center center,right center;
   background-size:cover,34% 100%,34% 100%,34% 100%;
   background-repeat:no-repeat
 }
 @media(max-width:575px) {
   .page-hero {
-    background-image:linear-gradient(rgba(16,44,88,.8),rgba(16,44,88,.8)),url('photos/ACTIVITIES/ACT1.jpg'),url('photos/ACTIVITIES/ACT2.png'),url('photos/ACTIVITIES/ACT3.png');
+    background-image:linear-gradient(rgba(16,44,88,.8),rgba(16,44,88,.8)),url('../images/ACTIVITIES/ACT1.jpg'),url('../images/ACTIVITIES/ACT2.png'),url('../images/ACTIVITIES/ACT3.png');
     background-size:cover,34% 100%,34% 100%,34% 100%
   }
   
 }
 /* One activity photo per page */
 .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('photos/ACTIVITIES/ACT1.jpg');
+  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('../images/ACTIVITIES/ACT1.jpg');
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat
 }
 .page-benefits .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('photos/ACTIVITIES/ACT2.png')
+  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('../images/ACTIVITIES/ACT2.png')
 }
 .page-process .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('photos/ACTIVITIES/ACT3.png')
+  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('../images/ACTIVITIES/ACT3.png')
 }
 .page-deployment .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('photos/ACTIVITIES/ACT1.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('../images/ACTIVITIES/ACT1.jpg')
 }
 .page-about .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('photos/ACTIVITIES/ACT2.png')
+  background-image:linear-gradient(rgba(16,44,88,.74),rgba(16,44,88,.74)),url('../images/ACTIVITIES/ACT2.png')
 }
 .page-registration .page-hero {
-  background-image:linear-gradient(90deg,rgba(247,248,251,.84) 0%,rgba(247,248,251,.68) 48%,rgba(234,240,250,.28) 100%),url('photos/yep-homepage-bg.png');
+  background-image:linear-gradient(90deg,rgba(247,248,251,.84) 0%,rgba(247,248,251,.68) 48%,rgba(234,240,250,.28) 100%),url('../images/yep-homepage-bg.png');
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -1159,7 +1159,7 @@ body {
   display:none;
 }
 .page-account .page-hero {
-  background-image:linear-gradient(90deg,rgba(247,248,251,.84) 0%,rgba(247,248,251,.68) 48%,rgba(234,240,250,.28) 100%),url('photos/yep-homepage-bg.png');
+  background-image:linear-gradient(90deg,rgba(247,248,251,.84) 0%,rgba(247,248,251,.68) 48%,rgba(234,240,250,.28) 100%),url('../images/yep-homepage-bg.png');
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -1733,16 +1733,16 @@ body:not(.page-home) .page-hero .eyebrow {
   background-repeat:no-repeat
 }
 .page-about .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.46),rgba(16,44,88,.46)),url('photos/ACTIVITIES/ACT2.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.46),rgba(16,44,88,.46)),url('../images/ACTIVITIES/ACT2.jpg')
 }
 .page-benefits .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.46),rgba(16,44,88,.46)),url('photos/ACTIVITIES/ACT4.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.46),rgba(16,44,88,.46)),url('../images/ACTIVITIES/ACT4.jpg')
 }
 .page-process .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.46),rgba(16,44,88,.46)),url('photos/ACTIVITIES/ACT2.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.46),rgba(16,44,88,.46)),url('../images/ACTIVITIES/ACT2.jpg')
 }
 .page-deployment .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.46),rgba(16,44,88,.46)),url('photos/ACTIVITIES/ACT4.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.46),rgba(16,44,88,.46)),url('../images/ACTIVITIES/ACT4.jpg')
 }
 /* Keep the navy gradient underneath while making the photos more opaque */
 .page-about .page-hero,
@@ -1766,16 +1766,16 @@ body:not(.page-home) .page-hero .eyebrow {
   pointer-events:none
 }
 .page-about .page-hero:before {
-  background-image:url('photos/ACTIVITIES/ACT2.jpg')
+  background-image:url('../images/ACTIVITIES/ACT2.jpg')
 }
 .page-benefits .page-hero:before {
-  background-image:url('photos/ACTIVITIES/ACT4.jpg')
+  background-image:url('../images/ACTIVITIES/ACT4.jpg')
 }
 .page-process .page-hero:before {
-  background-image:url('photos/ACTIVITIES/ACT2.jpg')
+  background-image:url('../images/ACTIVITIES/ACT2.jpg')
 }
 .page-deployment .page-hero:before {
-  background-image:url('photos/ACTIVITIES/ACT4.jpg')
+  background-image:url('../images/ACTIVITIES/ACT4.jpg')
 }
 /* Final inner-page hero treatment: image retained, navy overlay, no circle */
 .page-about .page-hero:before,
@@ -1785,16 +1785,16 @@ body:not(.page-home) .page-hero .eyebrow {
   display:none!important
 }
 .page-about .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.88),rgba(16,44,88,.88)),url('photos/ACTIVITIES/ACT1.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.88),rgba(16,44,88,.88)),url('../images/ACTIVITIES/ACT1.jpg')
 }
 .page-benefits .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.88),rgba(16,44,88,.88)),url('photos/ACTIVITIES/ACT2.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.88),rgba(16,44,88,.88)),url('../images/ACTIVITIES/ACT2.jpg')
 }
 .page-process .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.88),rgba(16,44,88,.88)),url('photos/ACTIVITIES/ACT3.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.88),rgba(16,44,88,.88)),url('../images/ACTIVITIES/ACT3.jpg')
 }
 .page-deployment .page-hero {
-  background-image:linear-gradient(rgba(16,44,88,.88),rgba(16,44,88,.88)),url('photos/ACTIVITIES/ACT4.jpg')
+  background-image:linear-gradient(rgba(16,44,88,.88),rgba(16,44,88,.88)),url('../images/ACTIVITIES/ACT4.jpg')
 }
 .about-leadership {
   padding-top:5rem
@@ -2128,4 +2128,5 @@ body {
 }
 .text-link:hover,
 .text-link:focus-visible { color:#9f2637; }
+
 

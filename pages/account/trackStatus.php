@@ -1,7 +1,8 @@
-<?php
+﻿<?php
 $pageTitle = 'Application Status | MetroSEED-Naga';
 $activePage = '';
-require 'includes/site-header.php';
+$siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php';
 ?>
 
 <section class="page-hero">
@@ -31,11 +32,14 @@ require 'includes/site-header.php';
             <div class="process-step"><span>03</span><div><h3>Selection</h3><p>Awaiting official result.</p></div></div>
           </div>
 
-          <a href="index.php" class="btn btn-soft mt-4">Back to home</a>
+          <a href="<?= $siteRoot ?>index.php" class="btn btn-soft mt-4">Back to home</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<?php require 'includes/site-footer.php'; ?>
+<?php require '../../includes/site-footer.php'; ?>
+
+
+

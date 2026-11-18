@@ -1,4 +1,5 @@
-﻿<?php $pageTitle = 'Benefits | MetroSEED-Naga'; $activePage = 'benefits'; require 'includes/site-header.php'; ?>
+﻿<?php $pageTitle = 'Benefits | MetroSEED-Naga'; $activePage = 'benefits'; $siteRoot = $siteRoot ?? '../../';
+require '../../includes/site-header.php'; ?>
 <section class="page-hero">
 <div class="container">
 <span class="eyebrow">BENEFITS</span>
@@ -136,5 +137,8 @@
   </div>
 </section>
 
-<?php require 'includes/site-footer.php'; ?>
+<?php require '../../includes/site-footer.php'; ?>
+
+
+
 
