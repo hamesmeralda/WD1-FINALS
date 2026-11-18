@@ -37,8 +37,8 @@ require '../../includes/site-header.php';
             <div class="mt-3">
               <p class="small text-muted mb-2">Sample role</p>
               <div class="d-flex gap-2">
-                <a class="btn btn-soft flex-fill" href="<?= $siteRoot ?>workspace/staff/dashboard.php">Staff</a>
-                <a class="btn btn-soft flex-fill" href="<?= $siteRoot ?>workspace/admin/dashboard.php">Admin</a>
+                <a class="btn btn-soft flex-fill" href="<?= $siteRoot ?>workspace/staff/staff.php">Staff</a>
+                <a class="btn btn-soft flex-fill" href="<?= $siteRoot ?>workspace/admin/admin.php">Admin</a>
               </div>
             </div>
           </form>
