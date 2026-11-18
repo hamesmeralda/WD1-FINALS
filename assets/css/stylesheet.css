@@ -819,6 +819,9 @@ body {
 .page-admin-workspace .workspace-tool-card {
   background:linear-gradient(145deg,#ffffff 0%,#fff8f5 70%,#f9ece9 100%);
 }
+.page-staff-workspace .workspace-tool-card {
+  background:linear-gradient(145deg,#ffffff 0%,#fff8f5 70%,#f9ece9 100%);
+}
 .page-hero:before {
   content:'';
   position:absolute;

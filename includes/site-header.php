@@ -15,7 +15,7 @@ $siteRoot = $siteRoot ?? '';
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<?= $siteRoot ?>assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="<?= $siteRoot ?>assets/css/stylesheet.css?v=20">
+  <link rel="stylesheet" href="<?= $siteRoot ?>assets/css/stylesheet.css?v=21">
   <link rel="icon" type="image/png" href="<?= $siteRoot ?>assets/images/favicon/fav-icon.png">
 </head>
 <body class="page-<?= htmlspecialchars($activePage) ?>">
