@@ -4,7 +4,7 @@ $activePage = 'deployment';
 $siteRoot = $siteRoot ?? '../../';
 require '../../includes/site-header.php';
 
-$offices = [
+$defaultOffices = [
   ['General Services Office', 'GSO', 'https://www2.naga.gov.ph/office-service/general-services-office/', 'Supports city operations through facilities, records, supplies, logistics, and front-line administrative services.', 'organization · filing · customer service'],
   ['City Engineer’s Office', 'CEO', 'https://www2.naga.gov.ph/office-service/city-engineers-office/', 'Works with public infrastructure, construction projects, inspections, plans, and technical city services.', 'technical writing · data organization · field awareness'],
   ['City Health Office', 'CHO', 'https://www2.naga.gov.ph/office-service/city-health-office/', 'Helps deliver public-health programs, information campaigns, records support, and community health services.', 'careful documentation · empathy · confidentiality'],
@@ -62,6 +62,31 @@ $offices = [
   ['Raul S. Roco Library', 'RSRL', 'https://www2.naga.gov.ph/office-service/raul-s-roco-library/', 'Supports readers, learning resources, library organization, research assistance, and community learning activities.', 'organization · research · service orientation'],
   ['City Educare Service', 'Educare', 'https://www2.naga.gov.ph/office-service/city-educare-service/', 'Supports child-focused care, learning activities, family assistance, and community-based social services.', 'patience · creativity · safeguarding awareness']
 ];
+
+$offices = [];
+try {
+  require __DIR__ . '/../../database/connect.php';
+  if ($pdo instanceof PDO) {
+    $officeRows = $pdo->query('SELECT officeId, officeName, officeUrl, officePhoto, officeDescription, requiredSkills FROM offices ORDER BY officeName ASC')->fetchAll();
+    foreach ($officeRows as $office) {
+      $skills = json_decode((string) ($office['requiredSkills'] ?? ''), true) ?: [];
+      $offices[] = [
+        $office['officeName'],
+        $office['officeId'],
+        $office['officeUrl'] ?: '#',
+        $office['officeDescription'] ?: 'Office details will be provided by Metro PESO.',
+        implode(' · ', array_map('strval', $skills)),
+        $office['officePhoto'] ?: '',
+      ];
+    }
+  }
+} catch (Throwable $e) {
+  error_log($e->getMessage());
+}
+
+if (!$offices) {
+  $offices = $defaultOffices;
+}
 
 function cleanOfficeText(string $text): string
 {
@@ -164,8 +189,16 @@ function cleanOfficeText(string $text): string
 <p>Each card shows the kind of environment and skills a beneficiary may practice. Actual deployment depends on approved slots and program needs.</p>
 </div>
 <div class="office-card-grid">
-<?php foreach ($offices as [$name, $abbr, $url, $description, $skills]): ?>
+<?php foreach ($offices as $office):
+  [$name, $abbr, $url, $description, $skills] = array_pad($office, 6, '');
+  $photo = $office[5] ?? '';
+?>
 <article class="office-card">
+<?php if ($photo): ?>
+<div class="office-photo-placeholder office-photo-image">
+<img src="<?= htmlspecialchars($siteRoot . ltrim($photo, '/')) ?>" alt="<?= htmlspecialchars(cleanOfficeText($name)) ?> workplace photo" loading="lazy">
+</div>
+<?php else: ?>
 <div class="office-photo-placeholder">
 <i class="bi bi-image">
 </i>
@@ -173,6 +206,7 @@ function cleanOfficeText(string $text): string
 <?= htmlspecialchars(cleanOfficeText($abbr)) ?> workplace photo</span>
 <small>Approved office photo placeholder</small>
 </div>
+<?php endif; ?>
 <div class="office-card-top">
 <span class="office-icon">
 <i class="bi bi-building">

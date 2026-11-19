@@ -983,6 +983,16 @@ body {
   font-size:.63rem;
   color:var(--muted)
 }
+.office-photo-image {
+  overflow:hidden;
+  border-style:solid
+}
+.office-photo-image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block
+}
 .workplace-note {
   background:linear-gradient(135deg,#fff,#eef3fb);
   border-top:4px solid var(--red)

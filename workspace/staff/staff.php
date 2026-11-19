@@ -23,7 +23,7 @@ require '../../includes/site-header.php';
             <h3>Manage applicants</h3>
           </div>
           <p>Review applications, update applicant information, and manage application statuses.</p>
-          <button class="btn btn-brand mt-3" type="button">Open applicant management</button>
+<a class="btn btn-brand mt-3" href="tools/manage_applicants.php">Open applicant management</a>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ require '../../includes/site-header.php';
             <h3>Manage offices</h3>
           </div>
           <p>Maintain participating offices, available assignments, and workplace information.</p>
-          <button class="btn btn-brand mt-3" type="button">Open office management</button>
+<a class="btn btn-brand mt-3" href="tools/manage_offices.php">Open office management</a>
         </div>
       </div>
     </div>
