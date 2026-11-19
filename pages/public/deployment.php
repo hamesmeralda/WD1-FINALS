@@ -65,6 +65,10 @@ $defaultOffices = [
 
 $offices = [];
 try {
+  // Keep this page renderable when MySQL is temporarily unavailable. The
+  // built-in office list below will be used instead of returning JSON after
+  // the page has already started rendering HTML.
+  $allowConnectionFailure = true;
   require __DIR__ . '/../../database/connect.php';
   if ($pdo instanceof PDO) {
     $officeRows = $pdo->query('SELECT officeId, officeName, officeUrl, officePhoto, officeDescription, requiredSkills FROM offices ORDER BY officeName ASC')->fetchAll();
